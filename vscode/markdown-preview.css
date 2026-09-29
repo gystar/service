@@ -1,94 +1,187 @@
-.github-markdown-body {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 40px 56px 80px;
+/* VS Code Markdown Preview
+ * Style target: clean technical-document look, close to the earlier
+ * Markdown Preview Enhanced screenshot.
+ */
 
+.github-markdown-body {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 36px 48px 72px;
+
+    /* Technical-document / UI style rather than paper-like serif text */
     font-family:
-        "Times New Roman",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
         "Microsoft YaHei",
         "微软雅黑",
         "PingFang SC",
         "Noto Sans CJK SC",
-        serif;
+        Arial,
+        sans-serif;
 
-    font-size: 17px;
-    line-height: 1.8;
-    letter-spacing: 0.01em;
-
+    font-size: 16px;
+    line-height: 1.78;
+    letter-spacing: 0;
     color: #24292f;
 }
 
-/* 正文 */
-.github-markdown-body p,
-.github-markdown-body li {
-    line-height: 1.8;
+/* ---------- Headings ---------- */
+
+.github-markdown-body h1,
+.github-markdown-body h2,
+.github-markdown-body h3,
+.github-markdown-body h4,
+.github-markdown-body h5,
+.github-markdown-body h6 {
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Microsoft YaHei",
+        "微软雅黑",
+        "PingFang SC",
+        "Noto Sans CJK SC",
+        Arial,
+        sans-serif;
+
+    color: #1f2328;
+    font-weight: 650;
+    line-height: 1.35;
 }
 
-/* 段落间距 */
-.github-markdown-body p {
-    margin-top: 0.75em;
-    margin-bottom: 0.75em;
-}
-
-/* 一级标题 */
 .github-markdown-body h1 {
-    font-size: 2em;
-    font-weight: 700;
-    margin-top: 1.4em;
-    margin-bottom: 0.8em;
+    font-size: 2rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.65em;
+    padding-bottom: 0.28em;
 }
 
-/* 二级标题 */
 .github-markdown-body h2 {
-    font-size: 1.55em;
-    font-weight: 700;
-    margin-top: 1.7em;
+    font-size: 1.48rem;
+    margin-top: 1.65em;
     margin-bottom: 0.7em;
+    padding-bottom: 0.32em;
 }
 
-/* 三级标题 */
 .github-markdown-body h3 {
-    font-size: 1.25em;
-    margin-top: 1.4em;
+    font-size: 1.20rem;
+    margin-top: 1.45em;
+    margin-bottom: 0.55em;
 }
 
-/* 列表 */
+.github-markdown-body h4 {
+    font-size: 1.05rem;
+    margin-top: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+/* ---------- Body text ---------- */
+
+.github-markdown-body p {
+    margin-top: 0.65em;
+    margin-bottom: 0.85em;
+    line-height: 1.78;
+}
+
+.github-markdown-body ul,
+.github-markdown-body ol {
+    padding-left: 2em;
+}
+
 .github-markdown-body li {
-    margin: 0.2em 0;
+    margin: 0.18em 0;
+    line-height: 1.72;
 }
 
-/* 行内代码 */
+/* Avoid excessively heavy bold text */
+.github-markdown-body strong {
+    font-weight: 650;
+    color: #1f2328;
+}
+
+/* ---------- Links ---------- */
+
+.github-markdown-body a {
+    color: #0969da;
+    text-decoration: none;
+}
+
+.github-markdown-body a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Blockquote ---------- */
+
+.github-markdown-body blockquote {
+    margin: 0.9em 0 1em;
+    padding: 0.25em 1em;
+    color: #57606a;
+    border-left: 4px solid #d0d7de;
+}
+
+.github-markdown-body blockquote > :first-child {
+    margin-top: 0;
+}
+
+.github-markdown-body blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+/* ---------- Inline code ---------- */
+
 .github-markdown-body code {
     font-family:
         "Cascadia Code",
+        "Cascadia Mono",
         "JetBrains Mono",
         Consolas,
         monospace;
-    font-size: 0.92em;
+
+    font-size: 0.88em;
 }
 
-/* 代码块 */
+/* ---------- Code blocks ---------- */
+
 .github-markdown-body pre {
-    padding: 16px 18px;
-    border-radius: 8px;
+    padding: 15px 17px;
+    margin: 1em 0;
+    border-radius: 6px;
+    line-height: 1.55;
+    overflow-x: auto;
+}
+
+.github-markdown-body pre code {
+    font-size: 0.9em;
+}
+
+/* ---------- Tables ---------- */
+
+.github-markdown-body table {
+    font-size: 0.94em;
     line-height: 1.55;
 }
 
-/* 表格 */
-.github-markdown-body table {
-    font-size: 0.94em;
+.github-markdown-body th,
+.github-markdown-body td {
+    vertical-align: top;
 }
 
-/* 引用 */
-.github-markdown-body blockquote {
-    margin: 1em 0;
-    padding: 0.2em 1em;
-    color: #57606a;
-}
+/* ---------- Images / diagrams ---------- */
 
-/* 图片 */
-.github-markdown-body img {
+.github-markdown-body img,
+.github-markdown-body svg {
     display: block;
     max-width: 100%;
-    margin: 1.5em auto;
+    margin: 1.35em auto;
 }
+
+/* ---------- Horizontal rule ---------- */
+
+.github-markdown-body hr {
+    height: 1px;
+    margin: 1.8em 0;
+    border: 0;
+    background: #d8dee4;
+}
+

@@ -1,0 +1,94 @@
+.github-markdown-body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 40px 56px 80px;
+
+    font-family:
+        "Times New Roman",
+        "Microsoft YaHei",
+        "微软雅黑",
+        "PingFang SC",
+        "Noto Sans CJK SC",
+        serif;
+
+    font-size: 17px;
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+
+    color: #24292f;
+}
+
+/* 正文 */
+.github-markdown-body p,
+.github-markdown-body li {
+    line-height: 1.8;
+}
+
+/* 段落间距 */
+.github-markdown-body p {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+
+/* 一级标题 */
+.github-markdown-body h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 1.4em;
+    margin-bottom: 0.8em;
+}
+
+/* 二级标题 */
+.github-markdown-body h2 {
+    font-size: 1.55em;
+    font-weight: 700;
+    margin-top: 1.7em;
+    margin-bottom: 0.7em;
+}
+
+/* 三级标题 */
+.github-markdown-body h3 {
+    font-size: 1.25em;
+    margin-top: 1.4em;
+}
+
+/* 列表 */
+.github-markdown-body li {
+    margin: 0.2em 0;
+}
+
+/* 行内代码 */
+.github-markdown-body code {
+    font-family:
+        "Cascadia Code",
+        "JetBrains Mono",
+        Consolas,
+        monospace;
+    font-size: 0.92em;
+}
+
+/* 代码块 */
+.github-markdown-body pre {
+    padding: 16px 18px;
+    border-radius: 8px;
+    line-height: 1.55;
+}
+
+/* 表格 */
+.github-markdown-body table {
+    font-size: 0.94em;
+}
+
+/* 引用 */
+.github-markdown-body blockquote {
+    margin: 1em 0;
+    padding: 0.2em 1em;
+    color: #57606a;
+}
+
+/* 图片 */
+.github-markdown-body img {
+    display: block;
+    max-width: 100%;
+    margin: 1.5em auto;
+}
